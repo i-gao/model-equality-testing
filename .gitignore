@@ -18,3 +18,4 @@ power_*.json
 .nfs*
 *.o
 finetuned_models/
+data/
