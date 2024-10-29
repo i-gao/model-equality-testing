@@ -1,6 +1,6 @@
 # Model Equality Testing: Which Model Is This API Serving?
 
-[Paper link]() | [Dataset link](https://drive.google.com/drive/folders/1TgxlUp3n-BFh-A6ARA42jkvxkv7Leccv?usp=drive_link) | [Twitter announcement]()
+[Paper link](https://arxiv.org/abs/2410.20247) | [Dataset link](https://drive.google.com/drive/folders/1TgxlUp3n-BFh-A6ARA42jkvxkv7Leccv?usp=drive_link) | [Twitter announcement]()
 
 
 Users often interact with large language models through black-box inference APIs, both for closed- and open-weight models (e.g., Llama models are popularly accessed via Amazon Bedrock and Azure AI Studios). 
@@ -117,13 +117,13 @@ API samples are saved as `.pkl` files containing dictionaries; the samples thems
 * To the best of our knowledge, API samples were all returned without special tokens.
 * Local samples may be loaded in unicode or token space; API samples can only be loaded in unicode. When loading samples in unicode, samples are batch decoded skipping special tokens, and each character is represented by its integer Unicode codepoint. Padding is represented as `-1`.
 
-Additional details about dataset collection can be found in Appendix B.1 in [the paper](). 
+Additional details about dataset collection can be found in Appendix B.1 in [the paper](https://arxiv.org/abs/2410.20247). 
 
 ## Reproducing paper experiments
 
 In `experiments/`, we include the code used to produce the experiments shown in the paper, including the code to generate the dataset (`experiments/sampling`) and the code to simulate power (`experiments/testing`).
 
-Note that APIs are actively evolving: many APIs have changed behavior since when we used these scripts to collect samples between July and August 2024. For full details documenting the dates we queried each API for the samples in our dataset, see Appendix B.1 in [the paper]().
+Note that APIs are actively evolving: many APIs have changed behavior since when we used these scripts to collect samples between July and August 2024. For full details documenting the dates we queried each API for the samples in our dataset, see Appendix B.1 in [the paper](https://arxiv.org/abs/2410.20247).
 
 ## Citation
 
